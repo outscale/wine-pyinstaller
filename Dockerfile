@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y flex \
 RUN apt-get build-dep -y wine
 
 # copy, unpack, build wine source
-ADD wine-4.7.tar.xz /
+ADD wine.tar.xz /
 WORKDIR /wine-4.7
 RUN ./configure && make && make install
 
@@ -29,7 +29,7 @@ RUN echo "DISPLAY: ${DISPLAY}"
 
 # winecfg
 WORKDIR /root/.wine/drive_c
-COPY python-3.7.3.exe .
+COPY python.exe .
 
 COPY config.sh .
 RUN chmod +x config.sh

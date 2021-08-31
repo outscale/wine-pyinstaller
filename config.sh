@@ -1,8 +1,8 @@
 #! /bin/bash
-  
+
 autorespond() {
     if [[ -z $WINEDLLOVERRIDES ]]; then
-        echo ".."   
+        echo ".."
         waitAndEnter "Wine Mono Installer"
         echo "..."
         waitAndEnter "Wine Gecko Installer"
@@ -56,7 +56,7 @@ while (( $(ps | grep wineserver | grep -vc grep) != 0 )); do
 done
 
 echo "Installing Python..."
-./winew.sh python-3.7.3.exe /quiet InstallAllUsers=1 PrependPath=1
+./winew.sh python.exe /quiet InstallAllUsers=1 PrependPath=1
 
 echo "Installing Pyinstaller..."
 ./winew.sh pip3 install pyinstaller
