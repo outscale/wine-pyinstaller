@@ -1,6 +1,6 @@
 # build wine
 FROM i386/ubuntu as winebuild
-LABEL maintainer="kicsikrumpli@gmail.com"
+LABEL maintainer="opensource@outscale.com"
 
 # build:
 # external X server at build time: --build-arg DISPLAY=host.docker.internal:0

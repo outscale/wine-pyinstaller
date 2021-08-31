@@ -1,6 +1,7 @@
 # Wine Pyinstaller
 
 Compile Python 3.x scripts with Pyinstaller into 32 bit Windows executables on Ubuntu with Wine.
+This work has been forked and adapted from [kicsikrumpli/wine-pyinstaller](https://github.com/kicsikrumpli/wine-pyinstaller)
 
 ## Build Image
 
@@ -15,7 +16,7 @@ To observe build time windows on external X server:
 ### Example Build
 
 ````bash
-docker build -t kicsikrumpli/wine-pyinstaller:latest .
+docker build -t outscale-dev/wine-pyinstaller:latest .
 ````
 
 ## Build 32-bit Windows Python Apps
@@ -27,11 +28,11 @@ docker build -t kicsikrumpli/wine-pyinstaller:latest .
 ### Example Run
 
 ````bash
-docker run -it -v $(pwd):/src kicsikrumpli/wine-pyinstaller --clean --onefile my_python_script.py
+docker run -it -v $(pwd):/src outscale-dev/wine-pyinstaller --clean --onefile my_python_script.py
 ````
 
 ## Run Bash in Container
 
 ````bash
-docker run -it kicsikrumpli/wine-pyinstaller --bash
+docker run -it outscale-dev/wine-pyinstaller --bash
 ````

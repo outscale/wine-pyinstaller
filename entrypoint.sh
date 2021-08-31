@@ -17,12 +17,9 @@ else
     echo "Usage:"
     echo "A,"
     echo "To invoke pyinstaller, bind mount script directory as /src and pass pyinstaller parameters"
-    echo "docker run -it -v $(pwd):/src kicsikrumpli/wine-pyinstaller --onefile --clean myscript.py "
+    echo "docker run -it -v $(pwd):/src outscale-dev/wine-pyinstaller --onefile --clean myscript.py "
     echo "---"
     echo "B,"
     echo "To run bash pass --bash, and optionally bash parameters"
-    echo "docker run -it kicsikrumpli/wine-pyinstaller --bash"
+    echo "docker run -it outscale-dev/wine-pyinstaller --bash"
 fi
-
-
-
