@@ -15,9 +15,7 @@ To observe build time windows on external X server:
 
 ### Example Build
 
-````bash
-docker build -t outscale-dev/wine-pyinstaller:latest .
-````
+Running `make` will get python installer, wine sources and build docker image.
 
 ## Build 32-bit Windows Python Apps
 
