@@ -34,3 +34,7 @@ docker run -it -v $(pwd):/src outscale-dev/wine-pyinstaller --clean --onefile my
 ````bash
 docker run -it outscale-dev/wine-pyinstaller --bash
 ````
+
+## Contributing
+
+Feel free to open an issue to ask questions or raise an issue
