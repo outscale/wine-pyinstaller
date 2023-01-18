@@ -1,4 +1,5 @@
 # Wine Pyinstaller
+[![Project Incubating](https://docs.outscale.com/fr/userguide/_images/Project-Incubating-blue.svg)](https://docs.outscale.com/en/userguide/Open-Source-Projects.html)
 
 Compile Python 3.x scripts with Pyinstaller into 32 bit Windows executables on Ubuntu with Wine.
 This work has been forked and adapted from [kicsikrumpli/wine-pyinstaller](https://github.com/kicsikrumpli/wine-pyinstaller)
